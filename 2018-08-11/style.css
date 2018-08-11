@@ -1,3 +1,8 @@
 .body-view {
-    height: 100vh;
+  height: 100vh;
+}
+
+.rounded1 {
+  border-radius: 4px;
+  border: 1px solid #ced4da;
 }
