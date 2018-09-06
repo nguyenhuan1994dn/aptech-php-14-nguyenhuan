@@ -1,9 +1,9 @@
 .Img-1 {
-    background: url("https://picsum.photos/500/600");
+    background: url("https://picsum.photos/500/600/?random");
 }
 
 .Img-2 {
-    background: url("https://picsum.photos/500/200");
+    background: url("https://picsum.photos/500/200/?random");
 }
 
 .Img-3 {
