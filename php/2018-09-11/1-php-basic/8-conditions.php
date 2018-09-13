@@ -59,11 +59,11 @@ $a = 9;
 
  echo "<br><br>";
  $language = 'PHP';
-  switch ($languge) {
- case 'PHP';
+  switch ($language) {
+ case 'PHP':
  echo "PHP: Hypertext Preprocessor";
  break;
- case 'JS';
+ case 'JS':
  echo "JavaScript";
  break;
  default:
