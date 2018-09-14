@@ -12,3 +12,13 @@ MODIFY COLUMN uId int NOT NULL AUTO_INCREMENT ; */
 VALUES
     ('Anna', 'Christopher', 'annateacher@yahoo.com', 2, 1, NOW()); */
     
+    
+ALTER TABLE aptech_php.apUser
+ADD PRIMARY KEY(uId);
+ALTER TABLE aptech_php.apUser
+MODIFY COLUMN uId int NOT NULL AUTO_INCREMENT ;
+
+INSERT INTO aptech_php.apUser
+    (uLastName, uFirstName,uEmail,uRole,uState,createdDate)
+VALUES
+    ('Anna', 'Christopher', 'annateacher@yahoo.com', 2, 1, NOW());

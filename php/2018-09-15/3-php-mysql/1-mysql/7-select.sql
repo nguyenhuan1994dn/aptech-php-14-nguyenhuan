@@ -17,3 +17,15 @@ LIMIT
 /* SELECT *
 FROM aptech_php.apUser
 WHERE uRole = 1 and uState = 1; */
+SELECT * FROM aptech_php_14_nguyenhuan.users;
+
+
+SELECT DISTINCT uRole 
+FROM aptech_php_14_nguyenhuan.users;
+
+
+SELECT * FROM users
+LIMIT 3;
+
+SELECT * FROM users
+WHERE uRole =1 and uState =1;

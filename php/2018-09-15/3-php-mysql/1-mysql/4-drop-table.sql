@@ -6,3 +6,4 @@
 /*
 DROP TABLE aptech_php_12.users; 
 */
+DROP TABLE aptech_php_14_nguyenhuan.users;

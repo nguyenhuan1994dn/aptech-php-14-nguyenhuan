@@ -44,5 +44,29 @@ INSERT INTO aptech_php.apUser (uLastName,uFirstName,uEmail)
 VALUES ('Ford','Henry','henry.ford@gmail.com');
 */
 
+CREATE TABLE aptech_php.apRole
+(
+    rId int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    rTitle varchar(255) NOT NULL UNIQUE,
+    rState int DEFAULT 1
+);
+
+INSERT INTO aptech_php.apRole (rTitle)
+VALUES ('Administrator'),('Copywriter');
 
 
+ALTER TABLE aptech_php.apUser
+MODIFY COLUMN uEmail varchar(255) NOT NULL UNIQUE;
+
+ALTER TABLE aptech_php.apUser
+MODIFY COLUMN uState int DEFAULT 1, 
+MODIFY COLUMN uRole int DEFAULT 2;
+
+ALTER TABLE aptech_php.apUser
+MODIFY COLUMN uCreatedDate datetime DEFAULT NOW();
+
+ALTER TABLE aptech_php.apUser
+ADD FOREIGN KEY (uRole) REFERENCES aptech_php.apRole(rId); 
+
+INSERT INTO aptech_php.apUser (uLastName,uFirstName,uEmail)
+VALUES ('Ford','Henry','henry.ford@gmail.com');
