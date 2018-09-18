@@ -12,7 +12,7 @@
   <body>
       <form action="6-welcome.php" method ="get">
           Email: <input type="text" name ="email"> <br>
-          Password: <input type="text" placeholder ="nhap pass" name="pass">
+          Password: <input type="text" placeholder ="nhap pass" name="password">
           <input type="submit">
       </form>
 
