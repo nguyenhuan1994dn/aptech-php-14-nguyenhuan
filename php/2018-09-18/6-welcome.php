@@ -15,7 +15,6 @@ $severname = "localhost";
 $username = "root";
 $password = "";
 $dbname = "aptech_php_14_nguyenhuan02";
-
 $conn = mysqli_connect($severname, $username, $password, $dbname);
 
 if (!$conn) {
