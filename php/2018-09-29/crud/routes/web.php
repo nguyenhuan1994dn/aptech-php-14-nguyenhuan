@@ -16,3 +16,4 @@ Route::get('/', function () {
 });
 
 Route::get('/user','UserController@getUser');
+Route::get('/user/{{id}}','UserController@getUser');
